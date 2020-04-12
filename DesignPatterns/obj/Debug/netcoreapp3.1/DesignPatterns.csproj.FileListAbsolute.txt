@@ -1,0 +1,12 @@
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/bin/Debug/netcoreapp3.1/DesignPatterns.deps.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/bin/Debug/netcoreapp3.1/DesignPatterns.runtimeconfig.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/bin/Debug/netcoreapp3.1/DesignPatterns.runtimeconfig.dev.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/bin/Debug/netcoreapp3.1/DesignPatterns.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/bin/Debug/netcoreapp3.1/DesignPatterns.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.csprojAssemblyReference.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.csproj.CoreCompileInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.AssemblyInfoInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.AssemblyInfo.cs
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/Debug/netcoreapp3.1/DesignPatterns.genruntimeconfig.cache
