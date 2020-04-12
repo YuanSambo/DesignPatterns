@@ -1,33 +1,36 @@
 ﻿//
 // File Name : Observer.cs
 // Author : Yuan Sambo
-// Date Created : 12/04/2020 
+// Author Email: yuan.sambo@gmail.com
+// Date Created : 12/04/2020
 //
-//
-//
+
 using System;
 using System.Collections.Generic;
 
 namespace DesignPatterns
 {
-    public interface ISubscriber
+    // The subscriber / listener
+    public interface ISubscriber     
     {
         public delegate void Notification();
 
         void OnNotify(Notification notif, Channel channel);
     }
 
-
-    public interface IChannel
+    // The publisher 
+    public interface IChannel        
     {
         void Subscribe(Account account);
         void UnSubscribe(Account account);
         void Notify();
     }
 
-    public class Channel : IChannel
+    // Concrete Publisher
+    public class Channel : IChannel     
     {
-        List<Account> subs = new System.Collections.Generic.List<Account>();
+        // List of subscribers
+        List<Account> subs = new List<Account>();    
         List<Video> videos = new List<Video>();
         private string name;
 
@@ -41,8 +44,8 @@ namespace DesignPatterns
         }
 
 
-
-        public void Notify()
+        // Notifies all the subscribed subscribers to this publisher.
+        public void Notify()                        
         {
             foreach (var acc in subs)
             {
@@ -50,13 +53,15 @@ namespace DesignPatterns
             }
         }
 
-        public void Subscribe(Account account)
+        // Registers the subscriber to the publisher
+        public void Subscribe(Account account)     
         {
             subs.Add(account);
             Console.WriteLine($"You are now subscribed to {name}");
         }
 
-        public void UnSubscribe(Account account)
+        // Unregisters the subscriber to the publisher
+        public void UnSubscribe(Account account)   
         {
             subs.Remove(account);
             Console.WriteLine("You are now unsubscribed");
@@ -78,8 +83,8 @@ namespace DesignPatterns
         }
     }
 
-
-    public class Account : ISubscriber
+    // Concrete Subscriber
+    public class Account : ISubscriber    
     {
 
         public string name { get; set; }
@@ -101,5 +106,22 @@ namespace DesignPatterns
     {
         public string Title { get; set; }
         public DateTime Date { get; set; }
+    }
+
+
+    class Youtube
+    {
+        //static void Main(string[] args)
+        //{
+        //    Channel MukbangChannel = new Channel("Zach Choi");
+        //    Channel TulfoChannel = new Channel("Raffy Tulfo in Action");
+        //    Account account = new Account("Yuan Sambo");
+
+        //    MukbangChannel.Subscribe(account);
+        //    MukbangChannel.UploadVideo("Borex ASMR");
+        //    MukbangChannel.UploadVideo("Ton Ton's Mukbang Challenge");
+        //    TulfoChannel.Subscribe(account);
+        //    TulfoChannel.UploadVideo("Professor hindi nag tuturo inireklamo ng estudyante.");
+        //}
     }
 }
