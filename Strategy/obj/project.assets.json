@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/DesignPatterns.csproj",
-      "projectName": "DesignPatterns",
-      "projectPath": "/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/DesignPatterns.csproj",
+      "projectUniqueName": "/Users/Yuan/Documents/GitHub/DesignPatterns/Strategy/Strategy.csproj",
+      "projectName": "Strategy",
+      "projectPath": "/Users/Yuan/Documents/GitHub/DesignPatterns/Strategy/Strategy.csproj",
       "packagesPath": "/Users/Yuan/.nuget/packages/",
-      "outputPath": "/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/",
+      "outputPath": "/Users/Yuan/Documents/GitHub/DesignPatterns/Strategy/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Yuan/.nuget/NuGet/NuGet.Config"
