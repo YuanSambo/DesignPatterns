@@ -10,12 +10,10 @@ using System.Collections.Generic;
 
 namespace DesignPatterns
 {
-    // The subscriber / listener
-    public interface ISubscriber     
+    // The subscriber or listener 
+    public interface ISubscriber
     {
-        public delegate void Notification();
-
-        void OnNotify(Notification notif, Channel channel);
+        void OnNotify(Action notif, Channel channel);
     }
 
     // The publisher 
@@ -86,14 +84,13 @@ namespace DesignPatterns
     // Concrete Subscriber
     public class Account : ISubscriber    
     {
-
-        public string name { get; set; }
+        private string Name { get; set; }
 
         public Account(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
-        public void OnNotify(ISubscriber.Notification notif, Channel channel)
+        public void OnNotify(Action notif, Channel channel)
         {
             Console.WriteLine($"Videos of {channel.Name}: \n");
             notif?.Invoke();

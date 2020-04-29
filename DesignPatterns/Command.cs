@@ -18,31 +18,31 @@ namespace DesignPatterns
     // The receiver interface
     public interface Receiver
     {
-        public void moveRight();
-        public void moveLeft();
-        public void moveUp();
-        public void moveDown();
+        public void MoveRight();
+        public void MoveLeft();
+        public void MoveUp();
+        public void MoveDown();
     }
 
     //Concrete receiver
     public class Character : Receiver
     {
-        public void moveDown()
+        public void MoveDown()
         {
             Console.WriteLine("The player moved down");
         }
 
-        public void moveUp()
+        public void MoveUp()
         {
             Console.WriteLine("The player moved up");
         }
 
-        public void moveLeft()
+        public void MoveLeft()
         {
             Console.WriteLine("The player moved left");
         }
 
-        public void moveRight()
+        public void MoveRight()
         {
             Console.WriteLine("The player moved right");
         }
@@ -52,7 +52,7 @@ namespace DesignPatterns
     //Concrete commands
     public class RightCommand : Command
     {
-        Character _character;
+        private readonly Character _character;
 
         public RightCommand(Character character)
         {
@@ -62,12 +62,12 @@ namespace DesignPatterns
 
         public void Execute()
         {
-            _character.moveRight();
+            _character.MoveRight();
         }
     }
     public class LeftCommand : Command
     {
-        Character _character;
+        private readonly Character _character;
 
         public LeftCommand(Character character)
         {
@@ -77,14 +77,13 @@ namespace DesignPatterns
 
         public void Execute()
         {
-            _character.moveLeft();
+            _character.MoveLeft();
         }
     }
 
     public class UpCommand : Command
     {
-
-        Character _character;
+        private readonly Character _character;
 
         public UpCommand(Character character)
         {
@@ -94,7 +93,7 @@ namespace DesignPatterns
 
         public void Execute()
         {
-            _character.moveUp();
+            _character.MoveUp();
         }
     }
 
@@ -112,13 +111,13 @@ namespace DesignPatterns
 
         public void Execute()
         {
-            _character.moveDown();
+            _character.MoveDown();
         }
     }
     // The invoker
     public class InputHandler
     {
-        Character _character;
+        private readonly Character _character;
 
 
         public InputHandler(Character character)
@@ -127,8 +126,7 @@ namespace DesignPatterns
         }
 
 
-
-        public void InputHandling()
+        private void InputHandling()
         {
             var key = Console.ReadKey(true).Key;
 
@@ -145,9 +143,8 @@ namespace DesignPatterns
             {
                 Character player1 = new Character();
                 InputHandler inputHandler = new InputHandler(player1);
-                Boolean GameisRunning = true;
 
-                while (GameisRunning)
+                while (true)
                 {
                     inputHandler.InputHandling();
                 }

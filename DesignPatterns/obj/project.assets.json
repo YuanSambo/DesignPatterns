@@ -20,7 +20,7 @@
       "outputPath": "/Users/Yuan/Documents/GitHub/DesignPatterns/DesignPatterns/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Yuan/.config/NuGet/NuGet.Config"
+        "/Users/Yuan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
