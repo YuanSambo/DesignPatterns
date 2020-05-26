@@ -9,12 +9,12 @@ using System;
 
 namespace Strategy
 {
-    public interface IAttack
+    public interface IJob
     {
         public void Attack();
     }
 
-    public class PhysicalAttack : IAttack
+    public class Warrior : IJob
     {
         public void Attack()
         {
@@ -22,7 +22,7 @@ namespace Strategy
         }
     }
     
-    public class MagicAttack : IAttack
+    public class Mage : IJob
     {
         public void Attack()
         {
@@ -32,18 +32,26 @@ namespace Strategy
 
     public class Player
     {
-        public void Attack(IAttack attack)
+        private IJob _job;
+
+        public Player(IJob job)
         {
-            attack.Attack();
+            _job = job;
+        }
+        public void Attack()
+        {
+            _job.Attack();
         }
     }
     public class Program
     {
         static void Main(string[] args)
         {
-            Player player1 = new Player();
-            player1.Attack(new PhysicalAttack());
-            player1.Attack(new MagicAttack());
+            Player Zilong = new Player(new Warrior());
+            Player Eudora = new Player(new Mage());
+            Zilong.Attack();
+            Eudora.Attack();
+
         }
     }
 }
