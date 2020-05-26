@@ -1,0 +1,12 @@
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/bin/Debug/netcoreapp3.1/Command.deps.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/bin/Debug/netcoreapp3.1/Command.runtimeconfig.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/bin/Debug/netcoreapp3.1/Command.runtimeconfig.dev.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/bin/Debug/netcoreapp3.1/Command.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/bin/Debug/netcoreapp3.1/Command.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.csprojAssemblyReference.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.csproj.CoreCompileInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.AssemblyInfoInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.AssemblyInfo.cs
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Command/obj/Debug/netcoreapp3.1/Command.genruntimeconfig.cache
