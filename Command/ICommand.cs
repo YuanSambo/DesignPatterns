@@ -10,13 +10,13 @@ using System;
 namespace Command
 {
     // The command interface
-    public interface Command
+    public interface ICommand
     {
         public void Execute();
     }
 
     // The receiver interface
-    public interface Receiver
+    public interface IReceiver
     {
         public void MoveRight();
         public void MoveLeft();
@@ -25,7 +25,7 @@ namespace Command
     }
 
     //Concrete receiver
-    public class Character : Receiver
+    public class Character : IReceiver
     {
         public void MoveDown()
         {
@@ -50,7 +50,7 @@ namespace Command
 
 
     //Concrete commands
-    public class RightCommand : Command
+    public class RightCommand : ICommand
     {
         private readonly Character _character;
 
@@ -65,7 +65,7 @@ namespace Command
             _character.MoveRight();
         }
     }
-    public class LeftCommand : Command
+    public class LeftCommand : ICommand
     {
         private readonly Character _character;
 
@@ -81,7 +81,7 @@ namespace Command
         }
     }
 
-    public class UpCommand : Command
+    public class UpCommand : ICommand
     {
         private readonly Character _character;
 
@@ -98,7 +98,7 @@ namespace Command
     }
 
 
-    public class DownCommand : Command
+    public class DownCommand : ICommand
     {
 
         Character _character;
@@ -118,6 +118,8 @@ namespace Command
     public class InputHandler
     {
         private readonly Character _character;
+        private ICommand lastCommand;
+
 
 
         public InputHandler(Character character)
@@ -126,31 +128,55 @@ namespace Command
         }
 
 
-        private void InputHandling()
+        public void InputHandling()
         {
             var key = Console.ReadKey(true).Key;
-
-            if (key == ConsoleKey.W) { new UpCommand(_character).Execute();}
-            if (key == ConsoleKey.S) { new DownCommand(_character).Execute();}
-            if (key == ConsoleKey.A) { new LeftCommand(_character).Execute(); }
-            if (key == ConsoleKey.D) { new RightCommand(_character).Execute(); }
-        }
-
-
-        public class Game
-        {
-            static void Main(String[] args)
+            if (key == ConsoleKey.W)
             {
-                Character player1 = new Character();
-                InputHandler inputHandler = new InputHandler(player1);
-
-                while (true)
-                {
-                    inputHandler.InputHandling();
-                }
-
+                lastCommand= new UpCommand(_character);
+                new UpCommand(_character).Execute();
             }
-        }
 
+            if (key == ConsoleKey.S)
+            {
+                lastCommand = new DownCommand(_character);
+                new DownCommand(_character).Execute();
+            }
+
+            if (key == ConsoleKey.A)
+            {
+                lastCommand = new LeftCommand(_character);
+                new LeftCommand(_character).Execute();
+            }
+
+            if (key == ConsoleKey.D)
+            {
+                lastCommand = new RightCommand(_character);
+                new RightCommand(_character).Execute();
+                
+            }
+            if (key == ConsoleKey.U)
+            {
+                Undo();
+            }            
+        }
+        public void Undo()
+        {
+            lastCommand?.Execute();
+        }
+    }
+    public class Game
+    {
+        static void Main(String[] args)
+        {
+            Character player1 = new Character();
+            InputHandler inputHandler = new InputHandler(player1);
+
+            while (true)
+            {
+                inputHandler.InputHandling();
+            }
+
+        }
     }
 }
