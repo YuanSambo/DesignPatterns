@@ -1,0 +1,12 @@
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/bin/Debug/netcoreapp3.1/Prototype.deps.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/bin/Debug/netcoreapp3.1/Prototype.runtimeconfig.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/bin/Debug/netcoreapp3.1/Prototype.runtimeconfig.dev.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/bin/Debug/netcoreapp3.1/Prototype.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/bin/Debug/netcoreapp3.1/Prototype.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.csprojAssemblyReference.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.csproj.CoreCompileInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.AssemblyInfoInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.AssemblyInfo.cs
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Prototype/obj/Debug/netcoreapp3.1/Prototype.genruntimeconfig.cache

@@ -117,17 +117,15 @@ namespace Command
     // The invoker
     public class InputHandler
     {
-        private readonly Character _character;
+        private  Character _character;
         private ICommand lastCommand;
 
-
-
+        
         public InputHandler(Character character)
         {
             _character = character;
         }
-
-
+        
         public void InputHandling()
         {
             var key = Console.ReadKey(true).Key;
