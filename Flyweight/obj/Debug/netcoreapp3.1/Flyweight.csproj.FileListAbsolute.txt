@@ -1,0 +1,12 @@
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/bin/Debug/netcoreapp3.1/Flyweight.deps.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/bin/Debug/netcoreapp3.1/Flyweight.runtimeconfig.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/bin/Debug/netcoreapp3.1/Flyweight.runtimeconfig.dev.json
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/bin/Debug/netcoreapp3.1/Flyweight.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/bin/Debug/netcoreapp3.1/Flyweight.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.csprojAssemblyReference.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.csproj.CoreCompileInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.AssemblyInfoInputs.cache
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.AssemblyInfo.cs
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.dll
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.pdb
+/Users/Yuan/Documents/GitHub/DesignPatterns/Flyweight/obj/Debug/netcoreapp3.1/Flyweight.genruntimeconfig.cache
